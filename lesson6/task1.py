@@ -1,3 +1,4 @@
-dict_ = {'dict': 1, 'dictionary': 2}
-print(dict_)
-print(dict(reversed(item) for item in dict_.items()))
+def reverse_dict(d):
+    d =dict((v, k) for k, v in d.items())
+    return d
+print(dict(reverse_dict({1: 2, 3: 4, 5: 55})))
