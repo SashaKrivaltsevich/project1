@@ -6,5 +6,5 @@
 
 """Перевод диста с интовыми в лист со строковыми через лямбду"""
 int_name = [4, 5, 6, 7, 8]
-numbers_str = list(map(lambda  x: str(x), int_name))
+numbers_str = list(map(lambda x: str(x), int_name))
 print(list(numbers_str))
