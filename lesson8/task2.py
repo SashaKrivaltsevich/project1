@@ -10,12 +10,8 @@ str2 = input("Вторая строка: \n")
 str3 = input("Третья строка: \n")
 str4 = input("Четвертая строка: \n")
 
-my_f = open('test1.txt', 'w')
-
 with open('test1.txt', 'w') as file:
-     my_f.write(str1 + '\n' + str2 + '\n')
-
-with open('test1.txt', 'a') as my_f1:
-    my_f.write(str3 + '\n' + str4 + '\n')
+    file.write(str1 + '\n' + str2 + '\n')
+    file.write(str3 + '\n' + str4 + '\n')
 
 
